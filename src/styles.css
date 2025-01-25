@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
 @theme {
   --font-sans: "Manrope", sans-serif;
   --color-light-cyan: hsl(193, 38%, 86%);
