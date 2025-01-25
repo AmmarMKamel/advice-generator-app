@@ -1,12 +1,37 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject, OnInit, signal } from '@angular/core';
+
+import { AdviceService } from './advice.service';
+import { Advice } from './advice.model';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
-export class AppComponent {
-  title = 'advice-generator-app';
+export class AppComponent implements OnInit {
+  private readonly adviceService = inject(AdviceService);
+
+  advice = signal<Advice>({
+    id: 0,
+    advice: '',
+  });
+
+  ngOnInit(): void {
+    this.getAdvice();
+  }
+
+  getAdvice() {
+    this.adviceService.getAdvice().subscribe({
+      next: (slip) => {
+        this.advice.set(slip.slip);
+      },
+      error: () => {
+        this.advice.set({
+          id: 0,
+          advice: 'An error occurred while fetching advice.',
+        });
+      },
+    });
+  }
 }

@@ -1,11 +1,10 @@
 <div class="bg-dark-blue flex min-h-screen w-full items-center justify-center">
   <main class="bg-dark-grayish-blue w-5/6 max-w-[543px] rounded-md p-8 pb-0">
     <p class="text-neon-green text-center text-xs tracking-[.4em] uppercase">
-      advice #117
+      advice #{{ advice().id }}
     </p>
     <h1 class="text-light-cyan my-5 text-center text-[28px] font-extrabold">
-      "It is easy to sit up and take notice, what's difficult is getting up and
-      taking action."
+      "{{ advice().advice }}"
     </h1>
 
     <img
@@ -22,6 +21,7 @@
     <button
       type="button"
       class="bg-neon-green relative -bottom-7 mx-auto block cursor-pointer rounded-full p-5 transition-shadow duration-300 hover:shadow-[0_0_25px_rgba(82,255,168,0.7)]"
+      (click)="getAdvice()"
     >
       <img src="/images/icon-dice.svg" alt="Black dice icon" />
     </button>
