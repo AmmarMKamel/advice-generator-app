@@ -1,59 +1,30 @@
-# AdviceGeneratorApp
+# Frontend Mentor - Advice generator app solution
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Development server
+## Table of contents
 
-To start a local development server, run:
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Built with](#built-with)
+- [Author](#author)
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Screenshot
 
-## Code scaffolding
+![Advice Generator App](https://jam.dev/cdn-cgi/image/width=1600,quality=100,dpr=1/https://cdn-jam-screenshots.jam.dev/46a72b4a7d288fa76d893120872add2a/screenshot/f5658793-1f4b-4648-96be-8e4b51ee1355.png)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Links
 
-```bash
-ng generate component component-name
-```
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Built with
 
-```bash
-ng generate --help
-```
+- Angular
+- Tailwind
 
-## Building
+## Author
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- LinkedIn - [Ammar Kamel](https://www.linkedin.com/in/ammar-kamel/)
+- Frontend Mentor - [@AmmarMKamel](https://www.frontendmentor.io/profile/AmmarMKamel)
